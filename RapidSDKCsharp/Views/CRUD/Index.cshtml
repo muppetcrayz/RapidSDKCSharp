@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h2>Index</h2></center>
+<div>
+    <button class="btn-primary" onclick='window.location = "@Url.Action("Register", "CRUD")";' >Register</button>
+</div>
+<div><p></p></div>
+<div>
+    <button class="btn-primary" onclick='window.location = "@Url.Action("Login", "CRUD")";' >Login</button>
+</div>
+<div><p></p></div>
+<div>
+    <button class="btn-primary" onclick='window.location = "@Url.Action("Create", "CRUD")";'>Create</button>
+</div>
+<div><p></p></div>
+<div>
+    <button class="btn-primary" onclick='window.location = "@Url.Action("Update", "CRUD")";' >Update</button>
+</div>
+<div><p></p></div>
+<div>
+    <button class="btn-primary" onclick='window.location = "@Url.Action("Read", "CRUD")";' >Read</button>
+</div>
+<div><p></p></div>
+<div>
+        <button class="btn-primary" onclick='window.location = "@Url.Action("Delete", "CRUD")";' >Delete</button>
+</div>
+<div><p></p></div>
+@using (Html.BeginForm("Logout", "CRUD/Logout", FormMethod.Post))
+{
+
+    <!-- form here -->
+    <button type="submit" class="btn-primary">Logout</button>
+
+}
+
+<div>
+    @if (@ViewData["Message"] != null)
+    {
+        <p> @ViewData["Message"]</p>
+
+    }
+</div>
+
+
+        
