@@ -233,7 +233,7 @@ namespace RapidSDK.Controllers
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("https://api.rapidsdk.com");
 
-            var byteArray = Encoding.ASCII.GetBytes("08f3284b9895b097e67c543168ff301ebc84fe164bb61442ba1a823caa797459:9785ac6154b56fbe8d2203580e9366bc41b830f1f996bfa5f121ce6ff34f8175");
+            var byteArray = Encoding.ASCII.GetBytes("API_KEY:API_SECRET");
             client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
 
             HttpResponseMessage response = await client.GetAsync(TARGETURL);

@@ -5,13 +5,13 @@ RapidSDK is a Backend as a Service platform that eliminates the need for app dev
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-Any system that can edit PHP files.
+Any system that can edit C# files.
 
 ### Installing
 Fork the repository and `git pull` onto your local machine. Then, open the solution.
 
 ### First Steps
-Firstly, you must change the `byteArray` located in the `CRUDController.cs` file to be your `apiKey` and `apiSecret` from the [Mobile Dashboard](http://mobile.rapidsdk.com).
+Firstly, you must change the `byteArray` located in the `HomeController.cs` file to be your `apiKey` and `apiSecret` from the [Mobile Dashboard](http://mobile.rapidsdk.com).
 
 ## Authors
 * Sage Conger - [sagealessandra](https://github.com/sagealessandra)
